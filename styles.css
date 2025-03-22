@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #ff7b00;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #e76a00;
+    transform: scale(1.05);
+}
+
+#identity {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Soulignement des valeurs */
+.copy-text u {
+    text-decoration: underline;
+}
+
+/* Icône de copie */
+.copy-icon {
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    margin-left: 8px;
+    transition: opacity 0.2s;
+}
+
+.copy-text:hover + .copy-icon {
+    display: inline-block;
+}
+
+.copy-icon:hover {
+    opacity: 0.7;
+}
+
+/* Effet du texte "Copied!" */
+.copy-icon.copied {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 3px 6px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.download-btn {
+    background: #ff7b00;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.download-btn:hover {
+    background: #e76a00;
+    transform: scale(1.05);
+}
