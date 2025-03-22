@@ -1,8 +1,12 @@
 generateBtn.addEventListener("click", async function () {
     try {
-        const response = await fetch("https://api.render.com/deploy/srv-cvfe1snnoe9s73bgb6u0?key=Qyl4hY2racQ", {
+        const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+        const apiUrl = "https://api.render.com/deploy/srv-cvfe1snnoe9s73bgb6u0?key=Qyl4hY2racQ";
+        const response = await fetch(proxyUrl + apiUrl, {
             method: "GET",
-            mode: "no-cors",  // Le mode CORS est ici
+            headers: {
+                "X-Requested-With": "XMLHttpRequest"
+            }
         });
 
         if (!response.ok) {
