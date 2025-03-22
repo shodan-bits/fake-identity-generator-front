@@ -1,8 +1,8 @@
 document.getElementById("generatebtn").addEventListener("click", async function () {
     try {
-        const response = await fetch("https://api.render.com/deploy/srv-cvfhppdumphs73da83b0?key=P7eRv3_cDMw", {
+        const response = await fetch("https://api.render.com/deploy/srv-cvfe1snnoe9s73bgb6u0?key=Qyl4hY2racQ", {
             method: "GET",
-            mode: "no-cors",  // desactive le mode cors
+            // Supprime 'mode: "no-cors"' pour permettre l'accès aux données
         });
 
         if (!response.ok) {
