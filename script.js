@@ -2,7 +2,7 @@ generateBtn.addEventListener("click", async function () {
     try {
         const response = await fetch("https://api.render.com/deploy/srv-cvfe1snnoe9s73bgb6u0?key=Qyl4hY2racQ", {
             method: "GET",
-            mode: "cors",  // Le mode CORS est ici
+            mode: "no-cors",  // Le mode CORS est ici
         });
 
         if (!response.ok) {
