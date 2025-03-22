@@ -1,12 +1,8 @@
-generateBtn.addEventListener("click", async function () {
+document.getElementById("generatebtn").addEventListener("click", async function () {
     try {
-        const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-        const apiUrl = "https://api.render.com/deploy/srv-cvfe1snnoe9s73bgb6u0?key=Qyl4hY2racQ";
-        const response = await fetch(proxyUrl + apiUrl, {
+        const response = await fetch("https://api.render.com/deploy/srv-cvfe1snnoe9s73bgb6u0?key=Qyl4hY2racQ", {
             method: "GET",
-            headers: {
-                "X-Requested-With": "XMLHttpRequest"
-            }
+            mode: "no-cors",  // desactive le mode cors
         });
 
         if (!response.ok) {
@@ -20,7 +16,7 @@ generateBtn.addEventListener("click", async function () {
         const randomImageUrl = `https://picsum.photos/200?random=${Math.floor(Math.random() * 1000)}`;
 
         // Création du contenu HTML
-        identityDiv.innerHTML = `
+        identityDiv.innerHTML = ` 
             <p><strong><u>Name:</u></strong> <span class="copy-text" data-value="${data.full_name}">${data.full_name}</span> <i class="ri-file-copy-line copy-icon"></i></p>
             <p><strong><u>Address:</u></strong> <span class="copy-text" data-value="${data.address}">${data.address}</span> <i class="ri-file-copy-line copy-icon"></i></p>
             <p><strong><u>Email:</u></strong> <span class="copy-text" data-value="${data.email}">${data.email}</span> <i class="ri-file-copy-line copy-icon"></i></p>
