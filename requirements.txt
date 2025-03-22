@@ -1,4 +1,4 @@
-Flask==2.2.2
-Flask-CORS==3.1.1
-Faker==18.5.0
-pdfkit==0.6.1
+Flask
+Flask-CORS
+Faker
+pdfkit
