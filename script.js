@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     generateBtn.addEventListener("click", async function () {
         try {
             // Récupération des données d'identité
-            const response = await fetch("https://fake-identity-generator.onrender.com");
+            const response = await fetch("https://api.render.com/deploy/srv-cvfe1snnoe9s73bgb6u0?key=Qyl4hY2racQ");
             const data = await response.json();
             if (!response.ok) throw new Error("Erreur lors de la récupération des données");
 
